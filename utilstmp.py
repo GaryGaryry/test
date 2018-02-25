@@ -57,10 +57,10 @@ def load_data_fashion_mnist(batch_size, resize=None, root="~/.mxnet/datasets/fas
     test_data = DataLoader(mnist_test, batch_size, shuffle=False)
     return (train_data, test_data)
 
-def try_gpu():
+def try_gpu(device_id=0):
     """If GPU is available, return mx.gpu(0); else return mx.cpu()"""
     try:
-        ctx = mx.gpu()
+        ctx = mx.gpu(device_id)
         _ = nd.array([0], ctx=ctx)
     except:
         ctx = mx.cpu()
