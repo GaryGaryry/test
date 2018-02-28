@@ -25,13 +25,13 @@
     }, 
     {
       "op": "Reshape", 
-      "name": "reshape0", 
-      "attrs": {"shape": "(50, 1, 56, 300)"}, 
+      "name": "reshape8", 
+      "attrs": {"target_shape": "(50, 1, 56, 300)"}, 
       "inputs": [[2, 0, 0]]
     }, 
     {
       "op": "null", 
-      "name": "convolution0_weight", 
+      "name": "convolution12_weight", 
       "attrs": {
         "kernel": "(3, 300)", 
         "num_filter": "100"
@@ -40,7 +40,7 @@
     }, 
     {
       "op": "null", 
-      "name": "convolution0_bias", 
+      "name": "convolution12_bias", 
       "attrs": {
         "kernel": "(3, 300)", 
         "num_filter": "100"
@@ -49,7 +49,7 @@
     }, 
     {
       "op": "Convolution", 
-      "name": "convolution0", 
+      "name": "convolution12", 
       "attrs": {
         "kernel": "(3, 300)", 
         "num_filter": "100"
@@ -58,13 +58,13 @@
     }, 
     {
       "op": "Activation", 
-      "name": "activation0", 
+      "name": "activation12", 
       "attrs": {"act_type": "relu"}, 
       "inputs": [[6, 0, 0]]
     }, 
     {
       "op": "Pooling", 
-      "name": "pooling0", 
+      "name": "pooling12", 
       "attrs": {
         "kernel": "(54, 1)", 
         "pool_type": "max", 
@@ -74,7 +74,7 @@
     }, 
     {
       "op": "null", 
-      "name": "convolution1_weight", 
+      "name": "convolution13_weight", 
       "attrs": {
         "kernel": "(4, 300)", 
         "num_filter": "100"
@@ -83,7 +83,7 @@
     }, 
     {
       "op": "null", 
-      "name": "convolution1_bias", 
+      "name": "convolution13_bias", 
       "attrs": {
         "kernel": "(4, 300)", 
         "num_filter": "100"
@@ -92,7 +92,7 @@
     }, 
     {
       "op": "Convolution", 
-      "name": "convolution1", 
+      "name": "convolution13", 
       "attrs": {
         "kernel": "(4, 300)", 
         "num_filter": "100"
@@ -101,13 +101,13 @@
     }, 
     {
       "op": "Activation", 
-      "name": "activation1", 
+      "name": "activation13", 
       "attrs": {"act_type": "relu"}, 
       "inputs": [[11, 0, 0]]
     }, 
     {
       "op": "Pooling", 
-      "name": "pooling1", 
+      "name": "pooling13", 
       "attrs": {
         "kernel": "(53, 1)", 
         "pool_type": "max", 
@@ -117,7 +117,7 @@
     }, 
     {
       "op": "null", 
-      "name": "convolution2_weight", 
+      "name": "convolution14_weight", 
       "attrs": {
         "kernel": "(5, 300)", 
         "num_filter": "100"
@@ -126,7 +126,7 @@
     }, 
     {
       "op": "null", 
-      "name": "convolution2_bias", 
+      "name": "convolution14_bias", 
       "attrs": {
         "kernel": "(5, 300)", 
         "num_filter": "100"
@@ -135,7 +135,7 @@
     }, 
     {
       "op": "Convolution", 
-      "name": "convolution2", 
+      "name": "convolution14", 
       "attrs": {
         "kernel": "(5, 300)", 
         "num_filter": "100"
@@ -144,13 +144,13 @@
     }, 
     {
       "op": "Activation", 
-      "name": "activation2", 
+      "name": "activation14", 
       "attrs": {"act_type": "relu"}, 
       "inputs": [[16, 0, 0]]
     }, 
     {
       "op": "Pooling", 
-      "name": "pooling2", 
+      "name": "pooling14", 
       "attrs": {
         "kernel": "(52, 1)", 
         "pool_type": "max", 
@@ -160,7 +160,7 @@
     }, 
     {
       "op": "Concat", 
-      "name": "concat0", 
+      "name": "concat4", 
       "attrs": {
         "dim": "1", 
         "num_args": "3"
@@ -169,13 +169,13 @@
     }, 
     {
       "op": "Reshape", 
-      "name": "reshape1", 
+      "name": "reshape9", 
       "attrs": {"target_shape": "(50, 300)"}, 
       "inputs": [[19, 0, 0]]
     }, 
     {
       "op": "Dropout", 
-      "name": "dropout0", 
+      "name": "dropout4", 
       "attrs": {"p": "0.5"}, 
       "inputs": [[20, 0, 0]]
     }, 
@@ -191,7 +191,7 @@
     }, 
     {
       "op": "FullyConnected", 
-      "name": "fullyconnected0", 
+      "name": "fullyconnected4", 
       "attrs": {"num_hidden": "2"}, 
       "inputs": [[21, 0, 0], [22, 0, 0], [23, 0, 0]]
     }, 
